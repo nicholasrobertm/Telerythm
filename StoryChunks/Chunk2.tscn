@@ -4,7 +4,6 @@
 
 [node name="Chunk2" instance=ExtResource( 1 )]
 
-margin_bottom = 240.0
 bodyText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu nisi luctus enim lacinia laoreet ac id erat. Curabitur sagittis quam arcu, eget ornare mauris eleifend sit. "
 time = 1
 
