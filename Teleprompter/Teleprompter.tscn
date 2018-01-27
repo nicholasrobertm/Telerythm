@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Teleprompter/Teleprompter.gd" type="Script" id=1]
 [ext_resource path="res://StoryChunks/Chunk0.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ArrowController.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ArrowController.gd" type="Script" id=4]
 
 [sub_resource type="ViewportTexture" id=1]
 
@@ -53,7 +55,7 @@ flip_v = true
 region_rect = Rect2( 0, 480, 1280, 240 )
 _sections_unfolded = [ "Offset", "Region", "Transform" ]
 
-[node name="ArrowController" type="Container" parent="." index="2"]
+[node name="ArrowController" type="Container" parent="." index="2" instance=ExtResource( 3 )]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -67,6 +69,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+script = ExtResource( 4 )
 _sections_unfolded = [ "Rect" ]
 
 

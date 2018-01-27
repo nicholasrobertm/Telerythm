@@ -1,6 +1,6 @@
 extends Node2D
 
-signal new_chunk(id)
+signal new_chunk(id, time)
 signal deborah_talking
 signal deborah_stop_talking
 	
@@ -15,7 +15,7 @@ func _ready():
 	
 func _process(delta):
 	if Input.is_action_just_pressed("ui_up"):
-		emit_signal("new_chunk", "test")
+		emit_signal("new_chunk", "test", 0)
 	if Input.is_action_just_pressed("ui_right"):
 		emit_signal("deborah_stop_talking")
 	if Input.is_action_just_pressed("ui_left"):

@@ -5,6 +5,6 @@ func _ready():
 	if teleprompter.size() != 0:
 		teleprompter[0].connect("new_chunk", self, "_image_change")
 
-func _image_change(id):
+func _image_change(id, time):
 	self.animation = id
 	self.play(id)
