@@ -7,16 +7,23 @@ export var button = ''
 export var sound_clips = ['']
 
 onready var id = int( name.replace('Chunk', '') )
+var next_chunk
 var height
+
+var triggered = false
 
 func _ready():
 	text = bodyText
 	
 	height = get_line_count() * get_line_height()
+	next_chunk = load("res://StoryChunks/Chunk" + str(id+1) + ".tscn")
+	if next_chunk != null:
+		var caret = load("res://StoryChunks/Caret.tscn").instance()
+		caret.rect_position = Vector2(0, height)
+		add_child( caret )
 	
 	var scroll_tween = Tween.new()
-	scroll_tween.interpolate_property(self, 'rect_position', rect_position, Vector2(0, -height + get_line_height() ), time, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-#	print(tween
+	scroll_tween.interpolate_property(self, 'rect_position', rect_position, Vector2(rect_position.x, -height ), time, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	add_child(scroll_tween)
 	scroll_tween.name = "ScrollTween"
 	scroll_tween.start()
@@ -24,23 +31,30 @@ func _ready():
 	scroll_tween.connect("tween_completed", self, "spawn_next")
 	
 func _process(delta):
-	if name == 'Chunk0':
-		print(rect_position)
+	if Input.is_key_pressed(KEY_UP):
+		print("test")
+	elif Input.is_key_pressed(KEY_DOWN):
+		print("test")
+	elif Input.is_key_pressed(KEY_LEFT):
+		print("test")
+	elif Input.is_key_pressed(KEY_RIGHT):
+		print("test")
+	else:
+		print("test")
 
 func spawn_next(obj, k):
-	var new_chunk = load("res://StoryChunks/Chunk" + str(id+1) + ".tscn")
-	if new_chunk == null:
+	if next_chunk == null:
 		return
-	new_chunk = new_chunk.instance()
+	next_chunk = next_chunk.instance()
 	
-	new_chunk.rect_position = Vector2(0,get_line_height())# rect_global_position.y + height + get_line_height()*2
-	get_parent().add_child( new_chunk )
+	next_chunk.rect_position = Vector2(rect_position.x,0)# rect_global_position.y + height + get_line_height()*2
+	get_parent().add_child( next_chunk )
 	
 	queue_free()
 	
 #	var current_position = rect_global_position
 #	get_parent().remove_child(self)
-#	new_chunk.add_child(self)
+#	next_chunk.add_child(self)
 ##	rect_global_position = current_position
 ##	rect_position = Vector2(0, -height)
 #	rect_position.y -= 40

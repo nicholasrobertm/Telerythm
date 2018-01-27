@@ -1,10 +1,10 @@
 extends AnimatedSprite
 
 func _ready():
-	var teleprompter = get_tree().get_nodes_in_group("Teleprompter")[0]
-	if teleprompter != null:
-		teleprompter.connect("deborah_talking", self, "_start_talking")
-		teleprompter.connect("deborah_stop_talking", self, "_stop_talking")
+	var teleprompter = get_tree().get_nodes_in_group("Teleprompter")
+	if teleprompter.size() > 0:
+		teleprompter[0].connect("deborah_talking", self, "_start_talking")
+		teleprompter[0].connect("deborah_stop_talking", self, "_stop_talking")
 
 func _start_talking():
 	print("talking")
