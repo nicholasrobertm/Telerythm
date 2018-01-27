@@ -6,7 +6,7 @@
 [ext_resource path="res://Sidebar.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Teleprompter/Teleprompter.tscn" type="PackedScene" id=5]
 
-[node name="Newsroom" type="Node"]
+[node name="Newsroom" type="Node" index="0"]
 
 [node name="Greenscreen" parent="." index="0" instance=ExtResource( 1 )]
 
@@ -16,6 +16,8 @@
 
 [node name="Sidebar" parent="." index="3" instance=ExtResource( 4 )]
 
-[node name="Teleprompter" parent="." index="4" instance=ExtResource( 5 )]
+[node name="Teleprompter" parent="." index="4" groups=[
+"Teleprompter",
+] instance=ExtResource( 5 )]
 
 
