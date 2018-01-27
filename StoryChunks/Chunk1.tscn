@@ -5,6 +5,6 @@
 [node name="Chunk1" instance=ExtResource( 1 )]
 
 bodyText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu nisi luctus enim lacinia laoreet ac id erat. Curabitur sagittis quam arcu, eget ornare mauris eleifend sit."
-time = 1
+time = 5
 
 

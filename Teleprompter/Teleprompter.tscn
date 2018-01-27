@@ -7,7 +7,7 @@
 [sub_resource type="World" id=1]
 
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 
 size = 40
 use_mipmaps = false
@@ -15,7 +15,7 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[sub_resource type="ViewportTexture" id=2]
+[sub_resource type="ViewportTexture" id=3]
 
 resource_local_to_scene = true
 flags = 0
@@ -29,7 +29,7 @@ script = ExtResource( 1 )
 
 arvr = false
 size = Vector2( 1280, 240 )
-own_world = false
+own_world = true
 world = SubResource( 1 )
 transparent_bg = false
 msaa = 0
@@ -52,19 +52,19 @@ shadow_atlas_quad_2 = 3
 shadow_atlas_quad_3 = 4
 _sections_unfolded = [ "Render Target", "Rendering" ]
 
-[node name="RichTextLabel" parent="Viewport" index="0" instance=ExtResource( 2 )]
+[node name="Chunk0" parent="Viewport" index="0" instance=ExtResource( 2 )]
 
 margin_bottom = 751.0
 rect_clip_content = true
 mouse_filter = 0
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis, lacus sit."
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
 position = Vector2( 0, 480 )
-texture = SubResource( 2 )
+texture = SubResource( 3 )
 centered = false
 flip_v = true
 region_rect = Rect2( 0, 480, 1280, 240 )
