@@ -1,0 +1,37 @@
+{
+	"messages": [{
+			"neutral": "Hello, Richmond. Welcome to Rhythm Action News. I'm your host, Just Deborah, reporting to you live. Tonight's top story: The Big Freeze, Are you prepared?"
+		},
+		{
+			"neutral": "Winter storm",
+			"good": "Nicholas is bringing freezing temperatures and hazardous roadways to most of the East Coast.",
+			"bad": "MARK is bringing freezing temperatures to Richmond, and destroying otherwise happy relationships."
+		}, {
+			"neutral": "That's right, it seems our predictions were wrong! Meteorologists forecasted no more than 2 inches of snow, and in some places in Richmond we're already seeing up to 8, with much more on the way in the following days.",
+			"good": "Stay tuned for tips on what to do if you need to go out in a blizzard.",
+			"bad": "It makes you think. What else has science been wrong about?"
+		}, {
+			"neutral": "Richmond citizens are readily preparing for the blocked roadways and power outages likely ahead of us. Food is flying off the shelves at local grocery stores.",
+			"good": "Experts say the most common foods purchased in times of emergency are milk and bread, so keep that in mind when making your list.",
+			"bad": "But if you keep energy bars taped to your skin at all times to absorb their power through osmosis, this is not a problem."
+		},{
+		 	"neutral": "Nicole Ari is a weather preparedness expert and advisor, and Rhythm news networks' broadcast meteorologist. Here are her top five tips on how to stay safe in blizzard conditions."
+		},{
+		 	"good": "",
+		  "bad": ""
+		},{
+		 	"good": "",
+		  "bad": ""
+		},{
+		 	"good": "",
+		  "bad": ""
+		},{
+		 	"good": "",
+		  "bad": ""
+		},{
+		  "neutral": "",
+		 	"good": "",
+		  "bad": ""
+		}
+	]
+}
