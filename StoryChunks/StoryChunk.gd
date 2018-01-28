@@ -17,7 +17,6 @@ func init(i):
 		text = message['neutral']
 		time = message['neutral_audio_length']
 		var stream = load("res://Voice/" + message['neutral_audio_file'])
-		print("res://Voice/" + message['neutral_audio_file'])
 		$AudioStreamPlayer.stream = stream
 		
 	elif 'good' in message:
@@ -67,7 +66,8 @@ func spawn_next(obj, k):
 		return
 	next_chunk = next_chunk.instance()
 	
-	next_chunk.rect_position = Vector2(rect_position.x,0)# rect_global_position.y + height + get_line_height()*2
+	next_chunk.rect_position = Vector2(rect_position.x,0)
+	next_chunk.id = id+1
 	get_parent().add_child( next_chunk )
 	next_chunk.init( id+1 )
 	
@@ -75,15 +75,4 @@ func spawn_next(obj, k):
 		next_chunk.self_modulate = Color(0,0,0,0)
 	
 	queue_free()
-	
-#	var current_position = rect_global_position
-#	get_parent().remove_child(self)
-#	next_chunk.add_child(self)
-##	rect_global_position = current_position
-##	rect_position = Vector2(0, -height)
-#	rect_position.y -= 40
-#	update()
-#	modulate = Color(0,0,0,0)
-	
-#	rect_position = Vector2(0, height)
 	

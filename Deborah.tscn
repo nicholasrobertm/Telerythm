@@ -360,7 +360,7 @@ tracks/9/keys = {
 "values": [ false, true ]
 }
 
-[node name="Deborah" type="AnimatedSprite" index="0"]
+[node name="Deborah" type="AnimatedSprite"]
 
 position = Vector2( 643.872, 258.369 )
 frames = SubResource( 1 )
@@ -378,9 +378,9 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 [node name="Mouth" type="AnimatedSprite" parent="." index="1"]
 
 visible = false
-position = Vector2( -0.544067, 0.0882568 )
+position = Vector2( -0.544006, 1.97125 )
 frames = SubResource( 3 )
-animation = "calm"
+animation = "panic"
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]

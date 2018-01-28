@@ -24,13 +24,12 @@ func get_status():
 	return $ArrowController.status
 	
 func get_id():
-	if $ArrowController.get_children().size() > 0:
+	if $Viewport.get_children().size() > 0:
 		return $Viewport.get_children()[0].id
 	else:
 		return 0
 	
 func get_time():
-	print(get_id())
 	var message = messages[ get_id() ]
 	
 	if 'neutral' in message:
