@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Meter 1.png-66a39c98c081e97bdb31589f462086dc.stex"
+
+[deps]
+
+source_file="res://Meter/Meter 1.png"
+source_md5="9cbe5ecf748c92b7236d1ed5c27cdef0"
+
+dest_files=[ "res://.import/Meter 1.png-66a39c98c081e97bdb31589f462086dc.stex" ]
+dest_md5="369d0391b35b74b08b1daf02d564ef4b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

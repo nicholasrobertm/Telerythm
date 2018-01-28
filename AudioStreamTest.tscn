@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = "extends AudioStreamPlayer
+
+var messages = []
+	
+func _ready():
+	var file = File.new()
+	file.open(\"res://messages.json\", file.READ)
+	var text = file.get_as_text()
+	messages = parse_json(text)['messages']
+	file.close()
+	
+	var dir = Directory.new()
+	dir.open(\"res://Voice/\")
+	dir.list_dir_begin()
+	
+	while true:
+		var fn = dir.get_next()
+		if fn == \"\":
+			break
+		elif fn.ends_with(\".ogg\"):
+			fn = \"res://Voice/\"+fn
+			stream = load(fn)
+			if stream == null:
+				printt('x',fn)
+			else:
+				print(fn)
+				play()
+				yield(self, \"finished\")
+
+	dir.list_dir_end()
+	print('done')"
+
+[node name="AudioStreamTest" type="AudioStreamPlayer" index="0"]
+
+stream = null
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+script = SubResource( 1 )
+
+
