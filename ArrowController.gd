@@ -19,8 +19,8 @@ func _ready():
 	connect("success", teleprompter, "success_failure")
 
 func _input(event):
-	if success_pointer < get_children().size() and event.is_action_pressed( pattern[ success_pointer ] ) and not event.is_echo():
-		get_children()[ success_pointer ].get_node("AnimationPlayer").play("Success")
+	if success_pointer < get_arrows().size() and event.is_action_pressed( pattern[ success_pointer ] ) and not event.is_echo():
+		get_arrows()[ success_pointer ].get_node("AnimationPlayer").play("Success")
 		success_pointer += 1
 		
 		if success_pointer == pattern.size():
@@ -70,6 +70,13 @@ func success():
 func failure():
 	status = false
 	emit_signal("success", false)
+	
+func get_arrows():
+	var arrows = []
+	for child in get_children():
+		if not child is AnimationPlayer:
+			arrows.push_back(child)
+	return arrows
 		
 func clear_arrows():
 	success_pointer = 0
