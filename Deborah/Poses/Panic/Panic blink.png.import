@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Panic blink.png-53c2e01614021861850079611763b443.stex"
+
+[deps]
+
+source_file="res://Deborah/Poses/Panic/Panic blink.png"
+source_md5="d991df810054bb618788938b10e5f276"
+
+dest_files=[ "res://.import/Panic blink.png-53c2e01614021861850079611763b443.stex" ]
+dest_md5="ff927f6a16805ea2463e02c40358dbb3"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

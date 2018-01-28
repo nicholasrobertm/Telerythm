@@ -5,6 +5,13 @@ func _ready():
 	if teleprompter.size() > 0:
 		teleprompter[0].connect("deborah_talking", self, "_start_talking")
 		teleprompter[0].connect("deborah_stop_talking", self, "_stop_talking")
+	
+
+func _calm_to_panic():
+	animation.play("calm_to_panic")
+
+func _panic_to_calm():
+	animation.play("panic_to_calm")
 
 func _start_talking():
 	print("talking")

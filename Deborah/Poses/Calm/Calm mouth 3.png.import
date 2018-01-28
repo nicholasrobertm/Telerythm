@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Calm mouth 3.png-e4ff7dda4174c060d064350a1e42e3d8.stex"
+
+[deps]
+
+source_file="res://Deborah/Poses/Calm/Calm mouth 3.png"
+source_md5="dfb9d6a005362a4c0f9be810a658c6fd"
+
+dest_files=[ "res://.import/Calm mouth 3.png-e4ff7dda4174c060d064350a1e42e3d8.stex" ]
+dest_md5="96a5d5094d82f89ad105be25cf6efcef"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

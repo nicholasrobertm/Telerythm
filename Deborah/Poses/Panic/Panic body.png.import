@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Panic body.png-c49c041aa71f34443b268e25a360190a.stex"
+
+[deps]
+
+source_file="res://Deborah/Poses/Panic/Panic body.png"
+source_md5="9227414dbe09a0fd6bd9c9ccbb094e13"
+
+dest_files=[ "res://.import/Panic body.png-c49c041aa71f34443b268e25a360190a.stex" ]
+dest_md5="d469771b62d89d472b36614292ea1bac"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
