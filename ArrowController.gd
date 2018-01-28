@@ -53,7 +53,8 @@ func new_combo( id, __ ):
 		arrow.texture = load("res://Arrows/" + e + ".png")
 		
 		add_child( arrow )
-		
+		if get_parent().messages.size() <= get_parent().get_id() + 1:
+			return
 		if 'neutral' in get_parent().messages[get_parent().get_id() + 1]:
 			arrow.get_node("AnimationPlayer").play("Intro")
 		else:

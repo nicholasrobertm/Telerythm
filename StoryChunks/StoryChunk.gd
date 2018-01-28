@@ -12,12 +12,14 @@ signal new_chunk(id)
 func init(i):
 	id = i
 	
+	if id >= $"../..".messages.size():
+		get_tree().change_scene_to( preload("res://Title.tscn") )
+		return
 	var message = $"../..".messages[id]
 	if 'neutral' in message:
 		text = message['neutral']
 		time = message['neutral_audio_length']
 		var stream = load("res://Voice/" + message['neutral_audio_file'])
-		printt( id, message['neutral_audio_file'] )
 		$AudioStreamPlayer.stream = stream
 		
 	elif 'good' in message:
@@ -26,11 +28,9 @@ func init(i):
 		if $"../..".get_status() == true:
 			time = message['good_audio_length']
 			$AudioStreamPlayer.stream = load("res://Voice/" + message['good_audio_file'])
-			printt( id, message['good_audio_file'] )
 		else:
 			time = message['bad_audio_length']
 			$AudioStreamPlayer.stream = load("res://Voice/" + message['bad_audio_file'])
-			printt( id, message['bad_audio_file'] )
 			
 	$AudioStreamPlayer.play()
 	
@@ -74,6 +74,8 @@ func spawn_next(obj, k):
 	get_parent().add_child( next_chunk )
 	next_chunk.init( id+1 )
 	
+	if $"../..".messages.size() <= next_chunk.id:
+		return
 	if not ('neutral' in $"../..".messages[next_chunk.id]) and $"../..".get_status() == false:
 		next_chunk.self_modulate = Color(0,0,0,0)
 	
