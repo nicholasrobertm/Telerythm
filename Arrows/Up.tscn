@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Arrows/Up.png" type="Texture" id=1]
 
-[node name="Up" type="TextureRect" index="0"]
+[node name="Up" type="TextureRect"]
 
 anchor_left = 0.0
 anchor_top = 0.0

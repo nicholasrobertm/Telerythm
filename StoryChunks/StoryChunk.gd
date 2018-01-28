@@ -10,10 +10,20 @@ onready var id = int( name.replace('Chunk', '') )
 var next_chunk
 var height
 
-var triggered = false
+var show_next = false
+
+signal new_chunk(id, time)
 
 func _ready():
 	text = bodyText
+	
+	var teleprompter = get_tree().get_nodes_in_group("Teleprompter")
+	if teleprompter.size() != 0:
+		teleprompter = teleprompter[0]
+		teleprompter.connect("success", self, 'success')
+		connect('new_chunk', teleprompter, 'new_chunk_in')
+		
+	emit_signal('new_chunk', 'id', time)
 	
 	height = get_line_count() * get_line_height()
 	next_chunk = load("res://StoryChunks/Chunk" + str(id+1) + ".tscn")
@@ -38,7 +48,13 @@ func spawn_next(obj, k):
 	next_chunk.rect_position = Vector2(rect_position.x,0)# rect_global_position.y + height + get_line_height()*2
 	get_parent().add_child( next_chunk )
 	
+	if show_next == false:
+		next_chunk.self_modulate = Color(0,0,0,0)
+	
 	queue_free()
+	
+func success():
+	show_next = true
 	
 #	var current_position = rect_global_position
 #	get_parent().remove_child(self)

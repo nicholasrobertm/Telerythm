@@ -16,14 +16,12 @@ func _ready():
 	messages = parse_json(text)
 	file.close()
 	
-	emit_signal("new_chunk", 'test', 4)
+func success_failure( state ):
+	emit_signal(state)
 	
-func pass_fail( state ):
-	match state:
-		'pass':
-			emit_signal("success")
-		'fail':
-			emit_signal('failure')
+func new_chunk_in( id, time ):
+	print('nci')
+	emit_signal('new_chunk', id, time)
 	
 #func _process(delta):
 #	if Input.is_action_just_pressed("ui_up"):

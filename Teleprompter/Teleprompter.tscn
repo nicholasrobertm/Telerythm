@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Teleprompter/Teleprompter.gd" type="Script" id=1]
-[ext_resource path="res://StoryChunks/Chunk0.tscn" type="PackedScene" id=2]
-[ext_resource path="res://ArrowController.tscn" type="PackedScene" id=3]
-[ext_resource path="res://ArrowController.gd" type="Script" id=4]
+[ext_resource path="res://ArrowController.tscn" type="PackedScene" id=2]
+[ext_resource path="res://StoryChunks/Chunk0.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ViewportTexture" id=1]
 
@@ -11,13 +10,17 @@ resource_local_to_scene = true
 flags = 0
 viewport_path = NodePath("Viewport")
 
-[node name="Teleprompter" type="Node2D" groups=[
+[node name="Teleprompter" type="Node2D" index="0" groups=[
 "Teleprompter",
 ]]
 
 script = ExtResource( 1 )
 
-[node name="Viewport" type="Viewport" parent="." index="0"]
+[node name="ArrowController" parent="." index="0" instance=ExtResource( 2 )]
+
+columns = 1
+
+[node name="Viewport" type="Viewport" parent="." index="1"]
 
 arvr = false
 size = Vector2( 1280, 240 )
@@ -44,11 +47,11 @@ shadow_atlas_quad_2 = 3
 shadow_atlas_quad_3 = 4
 _sections_unfolded = [ "Render Target", "Rendering" ]
 
-[node name="Chunk0" parent="Viewport" index="0" instance=ExtResource( 2 )]
+[node name="Chunk0" parent="Viewport" index="0" instance=ExtResource( 3 )]
 
 margin_bottom = 240.0
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
+[node name="Sprite" type="Sprite" parent="." index="2"]
 
 position = Vector2( 0, 480 )
 texture = SubResource( 1 )
@@ -56,23 +59,5 @@ centered = false
 flip_v = true
 region_rect = Rect2( 0, 480, 1280, 240 )
 _sections_unfolded = [ "Offset", "Region", "Transform" ]
-
-[node name="ArrowController" type="GridContainer" parent="." index="2" instance=ExtResource( 3 )]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 480.0
-margin_right = 320.0
-margin_bottom = 720.0
-rect_pivot_offset = Vector2( 0, 0 )
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-columns = 1
-script = ExtResource( 4 )
-_sections_unfolded = [ "Rect" ]
 
 
