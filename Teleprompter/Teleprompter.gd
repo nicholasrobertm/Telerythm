@@ -13,12 +13,14 @@ func _ready():
 	messages = parse_json(text)
 	file.close()
 	
-func _process(delta):
-	if Input.is_action_just_pressed("ui_up"):
-		emit_signal("new_chunk", "test", 0)
-	if Input.is_action_just_pressed("ui_right"):
-		emit_signal("deborah_stop_talking")
-	if Input.is_action_just_pressed("ui_left"):
-		emit_signal("deborah_talking")
+	emit_signal("new_chunk", 'test', 4)
 	
-	print(messages["messages"][0]["neutral"])
+#func _process(delta):
+#	if Input.is_action_just_pressed("ui_up"):
+#		emit_signal("new_chunk", "test", 0)
+#	if Input.is_action_just_pressed("ui_right"):
+#		emit_signal("deborah_stop_talking")
+#	if Input.is_action_just_pressed("ui_left"):
+#		emit_signal("deborah_talking")
+	
+#	print(messages["messages"][0]["neutral"])

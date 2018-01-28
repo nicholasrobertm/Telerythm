@@ -16,20 +16,20 @@
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="Up.svg"
-   inkscape:export-filename="/home/galan/Documents/Telerythm/Arrows/Up.png"
+   inkscape:export-filename="/home/galan/Documents/Telerythm/Arrows/Right.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#bdbdbd"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="-65.268089"
+     inkscape:cx="-14.018089"
      inkscape:cy="106.24526"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -70,14 +70,16 @@
            y="-494.28571" /></flowRegion><flowPara
          id="flowPara840" /></flowRoot>    <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:47.625px;line-height:6.61458302px;font-family:'Nova Flat';-inkscape-font-specification:'Nova Flat';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="-0.95911449"
-       y="296.73538"
-       id="text844"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36.57553864px;line-height:5.07993603px;font-family:'Nova Flat';-inkscape-font-specification:'Nova Flat';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1.4922308"
+       y="294.35391"
+       id="text844"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
          id="tspan842"
-         x="-0.95911449"
-         y="296.73538"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:28.22222137px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';stroke-width:0.26458332px;fill:#ffffff;">↑</tspan></text>
+         x="1.4922308"
+         y="294.35391"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:21.67439461px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';fill:#ffffff;stroke-width:0.26458332px">↑</tspan></text>
   </g>
 </svg>

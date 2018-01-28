@@ -29,18 +29,6 @@ func _ready():
 	scroll_tween.start()
 	
 	scroll_tween.connect("tween_completed", self, "spawn_next")
-	
-func _process(delta):
-	if Input.is_key_pressed(KEY_UP):
-		print("test")
-	elif Input.is_key_pressed(KEY_DOWN):
-		print("test")
-	elif Input.is_key_pressed(KEY_LEFT):
-		print("test")
-	elif Input.is_key_pressed(KEY_RIGHT):
-		print("test")
-	else:
-		print("test")
 
 func spawn_next(obj, k):
 	if next_chunk == null:
