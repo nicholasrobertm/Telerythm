@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Calm blink.png-b721271e385ef45e1d33e81689e24d4e.stex"
+
+[deps]
+
+source_file="res://Deborah/Poses/Calm/Calm blink.png"
+source_md5="057e6604843c9c0a0d80983fc06e853b"
+
+dest_files=[ "res://.import/Calm blink.png-b721271e385ef45e1d33e81689e24d4e.stex" ]
+dest_md5="13c01a7973be2892b5bd9adc2a0bc64d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
