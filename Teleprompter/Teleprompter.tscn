@@ -49,8 +49,6 @@ _sections_unfolded = [ "Render Target", "Rendering" ]
 
 [node name="Chunk0" parent="Viewport" index="0" instance=ExtResource( 3 )]
 
-margin_bottom = 720.0
-
 [node name="Sprite" type="Sprite" parent="." index="2"]
 
 position = Vector2( 0, 480 )
