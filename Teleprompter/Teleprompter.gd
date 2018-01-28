@@ -23,12 +23,6 @@ func new_chunk_in( id, time ):
 	print('nci')
 	emit_signal('new_chunk', id, time)
 	
-#func _process(delta):
-#	if Input.is_action_just_pressed("ui_up"):
-#		emit_signal("new_chunk", "test", 0)
-#	if Input.is_action_just_pressed("ui_right"):
-#		emit_signal("deborah_stop_talking")
-#	if Input.is_action_just_pressed("ui_left"):
-#		emit_signal("deborah_talking")
+func _process(delta):
+	# print(messages["messages"][0]["neutral"])
 	
-#	print(messages["messages"][0]["neutral"])
