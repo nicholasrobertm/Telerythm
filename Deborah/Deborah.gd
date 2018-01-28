@@ -3,13 +3,10 @@ extends AnimatedSprite
 func _ready():
 	var teleprompter = get_tree().get_nodes_in_group("Teleprompter")
 	if teleprompter.size() > 0:
-		teleprompter[0].connect("deborah_talking", self, "_start_talking")
-		teleprompter[0].connect("deborah_stop_talking", self, "_stop_talking")
+		teleprompter[0].connect("new_chunk", self, "_transition")
 	
+#func _transition(id, status):
 	
-#func _process(delta):
-	#if Input.is_action_just_pressed("ui_up")
-	#	$AnimationPlayer.
 
 func _eye_updated(mood,state):
 	if state:
