@@ -30,8 +30,7 @@ func get_id():
 		return 0
 	
 func get_time():
-	if messages == []:
-		return 1
+	print(get_id())
 	var message = messages[ get_id() ]
 	
 	if 'neutral' in message:

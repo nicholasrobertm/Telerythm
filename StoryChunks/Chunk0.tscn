@@ -5,9 +5,6 @@
 [node name="Chunk0" instance=ExtResource( 1 )]
 
 _sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_fonts" ]
-bodyText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum dui urna. "
 time = 2
-goodClip = ""
-badClip = ""
 
 

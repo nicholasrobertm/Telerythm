@@ -1,18 +1,43 @@
 extends Label
 
-export var bodyText = ''
+#export var bodyText = ''
 export var time = 0
-export var goodClip = ''
-export var badClip = ''
 
-onready var id = int( name.replace('Chunk', '') )
+var id
 var next_chunk
 var height
 
 signal new_chunk(id)
 
+func init(i):
+	id = i
+	
+	var message = $"../..".messages[id]
+	if 'neutral' in message:
+		text = message['neutral']
+		time = message['neutral_audio_length']
+		print("res://Voice/" + message['neutral_audio_file'])
+		var stream = load("res://Voice/" + message['neutral_audio_file'])
+		$AudioStreamPlayer.stream = stream
+		
+	elif 'good' in message:
+		text = message['good']
+		
+		if $"../..".get_status() == true:
+			time = message['good_audio_length']
+			$AudioStreamPlayer.stream = load("res://Voice/" + message['good_audio_file'])
+		else:
+			time = message['bad_audio_length']
+			$AudioStreamPlayer.stream = load("res://Voice/" + message['bad_audio_file'])
+			
+	$AudioStreamPlayer.play()
+	
+	
+
 func _ready():
-	text = bodyText
+	yield( get_tree().create_timer(0.1), "timeout")
+	if id == null:
+		init(0)
 	
 	var teleprompter = get_tree().get_nodes_in_group("Teleprompter")
 	if teleprompter.size() != 0:
@@ -20,11 +45,10 @@ func _ready():
 		teleprompter.connect("success", self, 'success')
 		connect('new_chunk', teleprompter, 'new_chunk_in')
 	
-	yield( get_tree().create_timer(0.1), "timeout")
 	emit_signal('new_chunk', id)
 	
 	height = get_line_count() * get_line_height()
-	next_chunk = load("res://StoryChunks/Chunk" + str(id+1) + ".tscn")
+	next_chunk = load("res://StoryChunks/BaseChunk.tscn")
 	if next_chunk != null:
 		var caret = load("res://StoryChunks/Caret.tscn").instance()
 		caret.rect_position = Vector2(0, height)
@@ -45,6 +69,7 @@ func spawn_next(obj, k):
 	
 	next_chunk.rect_position = Vector2(rect_position.x,0)# rect_global_position.y + height + get_line_height()*2
 	get_parent().add_child( next_chunk )
+	next_chunk.init( id+1 )
 	
 	if $"../..".get_status() == false:
 		next_chunk.self_modulate = Color(0,0,0,0)
