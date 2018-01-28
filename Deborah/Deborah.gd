@@ -5,7 +5,14 @@ func _ready():
 	if teleprompter.size() > 0:
 		teleprompter[0].connect("new_chunk", self, "_transition")
 	
-#func _transition(id, status):
+func _transition(id, status):
+	if id != 0:
+		if status:
+			if $AnimationPlayer.assigned_animation != "panic_to_calm":
+				$AnimationPlayer.play("panic_to_calm")
+		else:
+			if $AnimationPlayer.assigned_animation != "calm_to_panic":
+				$AnimationPlayer.play("calm_to_panic")
 	
 
 func _eye_updated(mood,state):

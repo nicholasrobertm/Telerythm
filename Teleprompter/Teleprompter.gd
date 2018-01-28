@@ -16,7 +16,10 @@ func success_failure( state ):
 	emit_signal('success', state)
 	
 func new_chunk_in(id):
-	emit_signal('new_chunk', id, get_status())
+	if id == 0:
+		emit_signal('new_chunk', id, true)
+	else:
+		emit_signal('new_chunk', id, get_status())
 
 # state reading 
 

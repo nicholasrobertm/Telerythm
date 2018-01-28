@@ -1,66 +1,66 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://Deborah/Poses/Calm/Calm body.png" type="Texture" id=1]
-[ext_resource path="res://Deborah/Poses/Panic/Panic body.png" type="Texture" id=2]
-[ext_resource path="res://Deborah/Poses/Tansition/Transition 1.png" type="Texture" id=3]
-[ext_resource path="res://Deborah/Poses/Tansition/Transition 2.png" type="Texture" id=4]
+[ext_resource path="res://Deborah/Poses/Tansition/Transition 1.png" type="Texture" id=1]
+[ext_resource path="res://Deborah/Poses/Tansition/Transition 2.png" type="Texture" id=2]
+[ext_resource path="res://Deborah/Poses/Calm/Calm body.png" type="Texture" id=3]
+[ext_resource path="res://Deborah/Poses/Panic/Panic body.png" type="Texture" id=4]
 [ext_resource path="res://Deborah/Deborah.gd" type="Script" id=5]
 [ext_resource path="res://Deborah/Poses/Calm/Calm eyes.png" type="Texture" id=6]
-[ext_resource path="res://Deborah/Poses/Calm/Calm blink.png" type="Texture" id=7]
-[ext_resource path="res://Deborah/Poses/Panic/Panic eyes.png" type="Texture" id=8]
+[ext_resource path="res://Deborah/Poses/Panic/Panic eyes.png" type="Texture" id=7]
+[ext_resource path="res://Deborah/Poses/Calm/Calm blink.png" type="Texture" id=8]
 [ext_resource path="res://Deborah/Poses/Panic/Panic blink.png" type="Texture" id=9]
 [ext_resource path="res://Deborah/Poses/Calm/Calm mouth 1.png" type="Texture" id=10]
 [ext_resource path="res://Deborah/Poses/Calm/Calm mouth 2.png" type="Texture" id=11]
 [ext_resource path="res://Deborah/Poses/Calm/Calm mouth 3.png" type="Texture" id=12]
-[ext_resource path="res://Deborah/Poses/Panic/Panic mouth 2.png" type="Texture" id=13]
-[ext_resource path="res://Deborah/Poses/Panic/Panic mouth 1.png" type="Texture" id=14]
+[ext_resource path="res://Deborah/Poses/Panic/Panic mouth 1.png" type="Texture" id=13]
+[ext_resource path="res://Deborah/Poses/Panic/Panic mouth 2.png" type="Texture" id=14]
 [ext_resource path="res://Deborah/Poses/Panic/Panic mouth 3.png" type="Texture" id=15]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "calm",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "panic",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "calm_to_panic",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "calm",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "panic_to_calm",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "panic",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=2]
 
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "calm_blink",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "panic_blink",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "calm",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "panic",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "calm_blink",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "panic_blink",
 "speed": 5.0
 } ]
 
@@ -77,14 +77,14 @@ animations = [ {
 "name": "calm",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
-"loop": true,
-"name": "panic_talking",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 14 ) ],
+"frames": [ ExtResource( 13 ) ],
 "loop": true,
 "name": "panic",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "panic_talking",
 "speed": 5.0
 } ]
 
@@ -190,7 +190,7 @@ tracks/7/keys = {
 "values": [ Vector2( -0.544006, 1.97125 ) ]
 }
 tracks/8/type = "method"
-tracks/8/path = NodePath("_mouth_updated")
+tracks/8/path = NodePath("")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
@@ -207,7 +207,7 @@ tracks/8/keys = {
 } ]
 }
 tracks/9/type = "method"
-tracks/9/path = NodePath("_eye_updated")
+tracks/9/path = NodePath("")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -226,9 +226,10 @@ tracks/9/keys = {
 
 [sub_resource type="Animation" id=5]
 
+resource_name = "panic_to_calm"
 length = 0.4
 loop = false
-step = 0.05
+step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:animation")
 tracks/0/interp = 1
@@ -260,7 +261,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.2 ),
+"times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ "panic", "calm" ]
@@ -275,10 +276,10 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ Vector2( -2.05103, 16.6259 ), Vector2( 0.948975, 1.90515 ) ]
+"values": [ Vector2( 0, -8.20221 ), Vector2( -0.0505371, 3.35382 ) ]
 }
-tracks/4/type = "method"
-tracks/4/path = NodePath("_eye_function")
+tracks/4/type = "value"
+tracks/4/path = NodePath("Eyes:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -286,30 +287,20 @@ tracks/4/enabled = true
 tracks/4/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
-"values": [ {
-"args": [ false, false ],
-"method": "_eye_updated"
-}, {
-"args": [ true, true ],
-"method": "_eye_updated"
-} ]
+"update": 1,
+"values": [ false, true ]
 }
-tracks/5/type = "method"
-tracks/5/path = NodePath("_mouth_function")
+tracks/5/type = "value"
+tracks/5/path = NodePath("Mouth:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 0.2 ),
+"times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
-"values": [ {
-"args": [ false, false ],
-"method": "_mouth_updated"
-}, {
-"args": [ true, true ],
-"method": "_mouth_updated"
-} ]
+"update": 1,
+"values": [ false, true ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Mouth:animation")
@@ -318,10 +309,10 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ "panic", "calm" ]
+"values": [ "calm" ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("Mouth:position")
@@ -330,13 +321,13 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 0.4 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ Vector2( -2.27197, 13.6324 ), Vector2( -0.544067, 0.0882568 ) ]
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.544006, 1.97125 ) ]
 }
-tracks/8/type = "value"
-tracks/8/path = NodePath("Eyes:visible")
+tracks/8/type = "method"
+tracks/8/path = NodePath("")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
@@ -344,11 +335,16 @@ tracks/8/enabled = true
 tracks/8/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ false, true ]
+"values": [ {
+"args": [ false, false ],
+"method": "_mouth_updated"
+}, {
+"args": [ true, true ],
+"method": "_mouth_updated"
+} ]
 }
-tracks/9/type = "value"
-tracks/9/path = NodePath("Mouth:visible")
+tracks/9/type = "method"
+tracks/9/path = NodePath("")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -356,31 +352,34 @@ tracks/9/enabled = true
 tracks/9/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ false, true ]
+"values": [ {
+"args": [ false, false ],
+"method": "_eye_updated"
+}, {
+"args": [ true, true ],
+"method": "_eye_updated"
+} ]
 }
 
-[node name="Deborah" type="AnimatedSprite"]
+[node name="Deborah" type="AnimatedSprite" index="0"]
 
 position = Vector2( 643.872, 258.369 )
 frames = SubResource( 1 )
-animation = "calm_to_panic"
+animation = "calm"
 script = ExtResource( 5 )
 
 [node name="Eyes" type="AnimatedSprite" parent="." index="0"]
 
-visible = false
-position = Vector2( 0, -8.20221 )
+position = Vector2( -0.0505371, 3.35382 )
 frames = SubResource( 2 )
 animation = "calm"
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="Mouth" type="AnimatedSprite" parent="." index="1"]
 
-visible = false
 position = Vector2( -0.544006, 1.97125 )
 frames = SubResource( 3 )
-animation = "panic"
+animation = "calm"
 _sections_unfolded = [ "Transform", "Visibility" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
