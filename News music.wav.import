@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/News music.wav-412aa409268f9b440f9e3524bc39d390.sample"
+
+[deps]
+
+source_file="res://News music.wav"
+source_md5="1672ea379e1906ee394ad500a99a7dae"
+
+dest_files=[ "res://.import/News music.wav-412aa409268f9b440f9e3524bc39d390.sample" ]
+dest_md5="2378e01a13ce0c78b871c176ec7e1404"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

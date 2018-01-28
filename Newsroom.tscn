@@ -19,7 +19,9 @@ _sections_unfolded = [ "Offset" ]
 
 [node name="Teleprompter" parent="." index="2" instance=ExtResource( 4 )]
 
-[node name="Sprite" type="Sprite" parent="." index="3"]
+visible = false
+
+[node name="Teleprompter" parent="." index="3" instance=ExtResource( 5 )]
 
 texture = ExtResource( 5 )
 centered = false

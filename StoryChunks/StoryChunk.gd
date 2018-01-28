@@ -12,6 +12,9 @@ signal new_chunk(id)
 func init(i):
 	id = i
 	
+	if id >= $"../..".messages.size():
+		get_tree().change_scene_to( preload("res://Title.tscn") )
+		return
 	var message = $"../..".messages[id]
 	if 'neutral' in message:
 		text = message['neutral']
@@ -71,6 +74,8 @@ func spawn_next(obj, k):
 	get_parent().add_child( next_chunk )
 	next_chunk.init( id+1 )
 	
+	if $"../..".messages.size() <= next_chunk.id:
+		return
 	if not ('neutral' in $"../..".messages[next_chunk.id]) and $"../..".get_status() == false:
 		next_chunk.self_modulate = Color(0,0,0,0)
 	

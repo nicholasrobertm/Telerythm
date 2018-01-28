@@ -10,8 +10,8 @@ config_version=3
 
 [application]
 
-config/name="TeleRhythm"
-run/main_scene="res://Newsroom.tscn"
+config/name="Rhythm Action News"
+run/main_scene="res://Title.tscn"
 config/icon="res://icon.png"
 
 [display]

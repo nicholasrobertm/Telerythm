@@ -19,14 +19,15 @@ func _ready():
 	connect("success", teleprompter, "success_failure")
 
 func _input(event):
-	if success_pointer < get_children().size() and event.is_action_pressed( pattern[ success_pointer ] ) and not event.is_echo():
-		get_children()[ success_pointer ].get_node("AnimationPlayer").play("Success")
+	if success_pointer < get_arrows().size() and event.is_action_pressed( pattern[ success_pointer ] ) and not event.is_echo():
+		get_arrows()[ success_pointer ].get_node("AnimationPlayer").play("Success")
 		success_pointer += 1
 		
 		if success_pointer == pattern.size():
 			success()
 	
 	elif not event.is_echo() and event.is_pressed() and event.as_text() in ['Up', 'Down', 'Left', 'Right']:
+		$AnimationPlayer.play("Failure")
 		failure()
 		
 func new_combo( id, __ ):
@@ -52,8 +53,8 @@ func new_combo( id, __ ):
 		arrow.texture = load("res://Arrows/" + e + ".png")
 		
 		add_child( arrow )
-		
-		print(get_parent().messages[get_parent().get_id() + 1])
+		if get_parent().messages.size() <= get_parent().get_id() + 1:
+			return
 		if 'neutral' in get_parent().messages[get_parent().get_id() + 1]:
 			arrow.get_node("AnimationPlayer").play("Intro")
 		else:
@@ -69,10 +70,18 @@ func success():
 func failure():
 	status = false
 	emit_signal("success", false)
-	clear_arrows()
+	
+func get_arrows():
+	var arrows = []
+	for child in get_children():
+		if not child is AnimationPlayer:
+			arrows.push_back(child)
+	return arrows
 		
 func clear_arrows():
 	success_pointer = 0
 	pattern = []
 	for child in get_children():
+		if child is AnimationPlayer:
+			continue
 		child.queue_free()
