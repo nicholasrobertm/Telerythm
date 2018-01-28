@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/2B. MARK - 3.75.ogg-39b9a018fc202eb0c8986ef3e443065d.oggstr"
+
+[deps]
+
+source_file="res://Voice/2B. MARK - 3.75.ogg"
+source_md5="dc0f1547eebd6fff547273816e457ac4"
+
+dest_files=[ "res://.import/2B. MARK - 3.75.ogg-39b9a018fc202eb0c8986ef3e443065d.oggstr" ]
+dest_md5="e7a3c4bfc0cf8d8c24db9d746f4702c3"
+
+[params]
+
+loop=true
+loop_offset=0

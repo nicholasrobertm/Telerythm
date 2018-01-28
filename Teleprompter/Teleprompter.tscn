@@ -10,7 +10,7 @@ resource_local_to_scene = true
 flags = 0
 viewport_path = NodePath("Viewport")
 
-[node name="Teleprompter" type="Node2D" groups=[
+[node name="Teleprompter" type="Node2D" index="0" groups=[
 "Teleprompter",
 ]]
 
@@ -49,7 +49,7 @@ _sections_unfolded = [ "Render Target", "Rendering" ]
 
 [node name="Chunk0" parent="Viewport" index="0" instance=ExtResource( 3 )]
 
-margin_bottom = 240.0
+margin_bottom = 720.0
 
 [node name="Sprite" type="Sprite" parent="." index="2"]
 

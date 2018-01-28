@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/13A. upload your 7.25.ogg-decfbd1cb1fc58cbe867b719c7a4ff9b.oggstr"
+
+[deps]
+
+source_file="res://Voice/13A. upload your 7.25.ogg"
+source_md5="c15701b44dc222aa34a688fe49f54bc6"
+
+dest_files=[ "res://.import/13A. upload your 7.25.ogg-decfbd1cb1fc58cbe867b719c7a4ff9b.oggstr" ]
+dest_md5="9026ee532d649648a17c25e6b00e9942"
+
+[params]
+
+loop=true
+loop_offset=0

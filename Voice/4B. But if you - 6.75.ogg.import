@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/4B. But if you - 6.75.ogg-1f9b8961944ae8d259d286b4725aa2b6.oggstr"
+
+[deps]
+
+source_file="res://Voice/4B. But if you - 6.75.ogg"
+source_md5="c066471d82122d1c2cea7429228b447f"
+
+dest_files=[ "res://.import/4B. But if you - 6.75.ogg-1f9b8961944ae8d259d286b4725aa2b6.oggstr" ]
+dest_md5="2ba8eee6626011d63c91bfe79e298760"
+
+[params]
+
+loop=true
+loop_offset=0

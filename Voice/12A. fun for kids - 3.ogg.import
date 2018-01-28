@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/12A. fun for kids - 3.ogg-803ca75d9e11813d79341d7848eca513.oggstr"
+
+[deps]
+
+source_file="res://Voice/12A. fun for kids - 3.ogg"
+source_md5="c0b1fc1390daab76d2e84329669d1b75"
+
+dest_files=[ "res://.import/12A. fun for kids - 3.ogg-803ca75d9e11813d79341d7848eca513.oggstr" ]
+dest_md5="3f0c817bf75607fe2cb4f69b7c595d4a"
+
+[params]
+
+loop=true
+loop_offset=0

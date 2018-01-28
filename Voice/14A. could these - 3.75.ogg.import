@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/14A. could these - 3.75.ogg-1b1b5030896f5f1e138671b9a687005c.oggstr"
+
+[deps]
+
+source_file="res://Voice/14A. could these - 3.75.ogg"
+source_md5="a9102105244e34b9a8dfa98c0b700d45"
+
+dest_files=[ "res://.import/14A. could these - 3.75.ogg-1b1b5030896f5f1e138671b9a687005c.oggstr" ]
+dest_md5="9dde6b17c65a75c856eb93c57e37a91f"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/3A. Stay tuned - 4.ogg-d3c25f563ea4210a5423bfa803a4bd6d.oggstr"
+
+[deps]
+
+source_file="res://Voice/3A. Stay tuned - 4.ogg"
+source_md5="b5dc94029a4b163b31bf55514e44066b"
+
+dest_files=[ "res://.import/3A. Stay tuned - 4.ogg-d3c25f563ea4210a5423bfa803a4bd6d.oggstr" ]
+dest_md5="343aa55df6b392898a38b5bdfac9d835"
+
+[params]
+
+loop=true
+loop_offset=0

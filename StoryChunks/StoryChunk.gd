@@ -16,8 +16,8 @@ func init(i):
 	if 'neutral' in message:
 		text = message['neutral']
 		time = message['neutral_audio_length']
-		print("res://Voice/" + message['neutral_audio_file'])
 		var stream = load("res://Voice/" + message['neutral_audio_file'])
+		print("res://Voice/" + message['neutral_audio_file'])
 		$AudioStreamPlayer.stream = stream
 		
 	elif 'good' in message:

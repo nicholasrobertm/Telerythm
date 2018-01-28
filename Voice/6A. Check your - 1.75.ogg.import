@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/6A. Check your - 1.75.ogg-031e9df505e02d86806067082a828898.oggstr"
+
+[deps]
+
+source_file="res://Voice/6A. Check your - 1.75.ogg"
+source_md5="37a1de910e82ee325c74de98ef9de0c8"
+
+dest_files=[ "res://.import/6A. Check your - 1.75.ogg-031e9df505e02d86806067082a828898.oggstr" ]
+dest_md5="61aa7b2d2160bf38387c794bba1cf0df"
+
+[params]
+
+loop=true
+loop_offset=0
