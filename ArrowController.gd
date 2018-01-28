@@ -19,8 +19,8 @@ func _ready():
 	connect("success", teleprompter, "success_failure")
 
 func _input(event):
-	if !pattern.empty() and event.is_action_pressed( pattern[ success_pointer ] ) and not event.is_echo():
-		get_children()[ success_pointer ].modulate = Color(0,0,1)
+	if success_pointer < get_children().size() and event.is_action_pressed( pattern[ success_pointer ] ) and not event.is_echo():
+		get_children()[ success_pointer ].get_node("AnimationPlayer").play("Success")
 		success_pointer += 1
 		
 		if success_pointer == pattern.size():
@@ -64,7 +64,7 @@ func new_combo( id, __ ):
 func success():
 	status = true
 	emit_signal("success", true)
-	clear_arrows()
+
 
 func failure():
 	status = false
