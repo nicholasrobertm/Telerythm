@@ -3,6 +3,9 @@ extends Node2D
 signal new_chunk(id, time)
 signal deborah_talking
 signal deborah_stop_talking
+
+signal success
+signal failure
 	
 var messages = {}	
 	
@@ -14,6 +17,13 @@ func _ready():
 	file.close()
 	
 	emit_signal("new_chunk", 'test', 4)
+	
+func pass_fail( state ):
+	match state:
+		'pass':
+			emit_signal("success")
+		'fail':
+			emit_signal('failure')
 	
 #func _process(delta):
 #	if Input.is_action_just_pressed("ui_up"):

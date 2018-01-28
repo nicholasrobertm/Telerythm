@@ -7,10 +7,10 @@ path="res://.import/Left.png-e7316a242f16324d36c0783b4cce6d9e.stex"
 [deps]
 
 source_file="res://Arrows/Left.png"
-source_md5="be0458a8dc047f222c3d34d054be883d"
+source_md5="ececd4dd368b395a71fb7fb1ae5e3948"
 
 dest_files=[ "res://.import/Left.png-e7316a242f16324d36c0783b4cce6d9e.stex" ]
-dest_md5="88f58c8f57bc61be71bb70492a0b1fc8"
+dest_md5="7b47d5d9ad1652df5f57b1a44bf7cec4"
 
 [params]
 
