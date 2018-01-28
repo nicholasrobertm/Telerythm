@@ -17,6 +17,7 @@ func init(i):
 		text = message['neutral']
 		time = message['neutral_audio_length']
 		var stream = load("res://Voice/" + message['neutral_audio_file'])
+		printt( id, message['neutral_audio_file'] )
 		$AudioStreamPlayer.stream = stream
 		
 	elif 'good' in message:
@@ -25,9 +26,11 @@ func init(i):
 		if $"../..".get_status() == true:
 			time = message['good_audio_length']
 			$AudioStreamPlayer.stream = load("res://Voice/" + message['good_audio_file'])
+			printt( id, message['good_audio_file'] )
 		else:
 			time = message['bad_audio_length']
 			$AudioStreamPlayer.stream = load("res://Voice/" + message['bad_audio_file'])
+			printt( id, message['bad_audio_file'] )
 			
 	$AudioStreamPlayer.play()
 	

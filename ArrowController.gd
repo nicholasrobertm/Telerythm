@@ -54,7 +54,6 @@ func new_combo( id, __ ):
 		
 		add_child( arrow )
 		
-		print(get_parent().messages[get_parent().get_id() + 1])
 		if 'neutral' in get_parent().messages[get_parent().get_id() + 1]:
 			arrow.get_node("AnimationPlayer").play("Intro")
 		else:
