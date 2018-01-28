@@ -19,8 +19,17 @@ func _eye_updated(mood,state):
 		else:
 			$Eyes.animation.play("panic")
 
-func _mouth_updated():	
-	
+func _mouth_updated(mood, state):	
+	if state:
+		if mood:
+			$Mouth.animation.play("calm_blink")
+		else:
+			$Mouth.animation.play("panic_blink")
+	else:
+		if mood:
+			$Mouth.animation.play("calm")
+		else:
+			$Mouth.animation.play("panic")
 
 func _calm_to_panic():
 	$AnimationPlayer.play("calm_to_panic")
