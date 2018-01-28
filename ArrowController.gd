@@ -1,6 +1,8 @@
 extends GridContainer
 
-signal success_failure(state)
+signal success(state)
+
+var status = false
 
 var pattern = []
 var success_pointer = 0
@@ -14,7 +16,7 @@ func _ready():
 		
 	teleprompter = teleprompter[0]
 	teleprompter.connect("new_chunk", self, 'new_combo')
-	connect("success_failure", teleprompter, "success_failure")
+	connect("success", teleprompter, "success_failure")
 
 func _input(event):
 	if !pattern.empty() and event.is_action_pressed( pattern[ success_pointer ] ) and not event.is_echo():
@@ -27,10 +29,11 @@ func _input(event):
 	elif not event.is_echo() and event.is_pressed() and event.as_text() in ['Up', 'Down', 'Left', 'Right']:
 		failure()
 		
-func new_combo( id, time ):
+func new_combo( id, __ ):
+	status = false
 	clear_arrows()
 	
-	for i in range( 0, int(time) ):
+	for i in range( 0, int( get_parent().get_time() ) ):
 		var next_arrow = int( rand_range(0,4) ) 
 		match next_arrow:
 			0:
@@ -52,11 +55,13 @@ func new_combo( id, time ):
 		
 
 func success():
-	emit_signal("success_failure", 'success')
+	status = true
+	emit_signal("success", true)
 	clear_arrows()
 
 func failure():
-	emit_signal("success_failure", 'failure')
+	status = false
+	emit_signal("success", false)
 	clear_arrows()
 		
 func clear_arrows():

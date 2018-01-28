@@ -34,7 +34,7 @@ script = ExtResource( 2 )
 _sections_unfolded = [ "Margin", "Rect", "custom_fonts" ]
 bodyText = "Lor"
 time = 0
-button = ""
-sound_clips = [ "" ]
+goodClip = ""
+badClip = ""
 
 

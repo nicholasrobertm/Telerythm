@@ -7,5 +7,7 @@
 _sections_unfolded = [ "Anchor", "Margin", "Rect", "custom_fonts" ]
 bodyText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fermentum dui urna. "
 time = 2
+goodClip = ""
+badClip = ""
 
 
