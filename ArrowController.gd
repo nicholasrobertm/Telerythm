@@ -27,6 +27,7 @@ func _input(event):
 			success()
 	
 	elif not event.is_echo() and event.is_pressed() and event.as_text() in ['Up', 'Down', 'Left', 'Right']:
+		$AnimationPlayer.play("Failure")
 		failure()
 		
 func new_combo( id, __ ):
@@ -69,10 +70,11 @@ func success():
 func failure():
 	status = false
 	emit_signal("success", false)
-	clear_arrows()
 		
 func clear_arrows():
 	success_pointer = 0
 	pattern = []
 	for child in get_children():
+		if child is AnimationPlayer:
+			continue
 		child.queue_free()
