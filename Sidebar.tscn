@@ -1,24 +1,77 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://icon.png" type="Texture" id=1]
-[ext_resource path="res://icon2.png" type="Texture" id=2]
-[ext_resource path="res://Sidebar/Sidebar.gd" type="Script" id=3]
+[ext_resource path="res://Sidebar/Assets/Grocery.png" type="Texture" id=1]
+[ext_resource path="res://Sidebar/Assets/Accumulation.png" type="Texture" id=2]
+[ext_resource path="res://Sidebar/Assets/Warning.png" type="Texture" id=3]
+[ext_resource path="res://Sidebar/Assets/Dog.png" type="Texture" id=4]
+[ext_resource path="res://Sidebar/Assets/Illuminati.png" type="Texture" id=5]
+[ext_resource path="res://Sidebar/Assets/Mark.png" type="Texture" id=6]
+[ext_resource path="res://Sidebar/Assets/Nicholas.png" type="Texture" id=7]
+[ext_resource path="res://Sidebar/Assets/Power outage.png" type="Texture" id=8]
+[ext_resource path="res://Sidebar/Assets/Yeti.png" type="Texture" id=9]
+[ext_resource path="res://Sidebar/Assets/Kids having fun.png" type="Texture" id=10]
+[ext_resource path="res://Sidebar/Sidebar.gd" type="Script" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "test",
-"speed": 1.0
+"name": "grocery",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "accumulation",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "warning",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "dog",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "illuminati",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "mark",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "nicholas",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "power_outage",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "yeti",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "kids_having_fun",
+"speed": 5.0
 } ]
 
 [node name="Sidebar" type="AnimatedSprite" index="0"]
 
 position = Vector2( 1144.36, 107.86 )
-scale = Vector2( 3.25641, 2.45281 )
 frames = SubResource( 1 )
-animation = "test"
-script = ExtResource( 3 )
+animation = "accumulation"
+script = ExtResource( 11 )
+_sections_unfolded = [ "Transform" ]
 
 

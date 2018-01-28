@@ -2,91 +2,115 @@
 	"messages": [{
 			"neutral": "Hello, Richmond. Welcome to Rhythm Action News. I'm your host, Just Deborah, reporting to you live. Tonight's top story: The Big Freeze, Are you prepared?",
 			"neutral_audio_length": 10.0,
-			"neutral_audio_file": "1. Intro - 10.ogg"
+			"neutral_audio_file": "1. Intro - 10.ogg",
+			"neutral_sidebar": "accumulation"
 		},
 		{
 			"neutral": "Winter storm",
 			"neutral_audio_length": 1.25,
-			"neutral_audio_file": "2. Winter Storm - 1.25.ogg"
+			"neutral_audio_file": "2. Winter Storm - 1.25.ogg",
+			"neutral_sidebar": "accumulation"
 		}, {
 			"good": "Nicholas is bringing freezing temperatures and hazardous roadways to most of the East Coast.",
 			"bad": "MARK is bringing freezing temperatures to Richmond, and destroying otherwise happy relationships.",
 			"good_audio_length": 5.25,
 			"bad_audio_length": 3.75,
 			"good_audio_file": "2A. Nicholas - 5.25.ogg",
-			"bad_audio_file": "2B. MARK - 3.75.ogg"
+			"bad_audio_file": "2B. MARK - 3.75.ogg",
+			"good_sidebar": "nicolas",
+			"bad_sidebar": "mark"
 		}, {
 			"neutral": "That's right, it seems our predictions were wrong! Meteorologists forecasted no more than 2 inches of snow, and in some places in Richmond we're already seeing up to 8, with much more on the way in the following days.",
 			"neutral_audio_length": 10.5,
-			"neutral_audio_file": "That_s right - 10.5.ogg"
+			"neutral_audio_file": "That_s right - 10.5.ogg",
+			"neutral_sidebar": "accumulation"
 		}, {
 			"good": "Stay tuned for tips on what to do if you need to go out in a blizzard.",
 			"bad": "It makes you think. What else has science been wrong about?",
 			"good_audio_length": 4.0,
 			"bad_audio_length": 4.0,
 			"good_audio_file": "3A. Stay tuned - 4.ogg",
-			"bad_audio_file": "3B. It makes you - 4.ogg"
+			"bad_audio_file": "3B. It makes you - 4.ogg",
+			"good_sidebar": "accumulation",
+			"bad_sidebar": "illuminati"
 		}, {
 			"neutral": "Richmond citizens are readily preparing for the blocked roadways and power outages likely ahead of us. Food is flying off the shelves at local grocery stores.",
 			"neutral_audio_length": 8.5,
-			"neutral_audio_file": "4. Richmond citizens - 8.5.ogg"
+			"neutral_audio_file": "4. Richmond citizens - 8.5.ogg",
+			"neutral_sidebar": "grocery"
 		}, {
 			"good": "Experts say the most common foods purchased in times of emergency are milk and bread, so keep that in mind when making your list.",
 			"bad": "But if you keep energy bars taped to your skin at all times to absorb their power through osmosis, this is not a problem.",
 			"good_audio_length": 7.25,
 			"bad_audio_length": 6.75,
 			"good_audio_file": "4A. Experts say - 7.25.ogg",
-			"bad_audio_file": "4B. But if you - 6.75.ogg"
+			"bad_audio_file": "4B. But if you - 6.75.ogg",
+			"good_sidebar": "grocery",
+			"bad_sidebar": "grocery"
 		}, {
 			"neutral": "Nicole Ari is a weather preparedness expert and advisor, and Rhythm news networks' broadcast meteorologist. Here are her top five tips on how to stay safe in blizzard conditions.",
 			"neutral_audio_length": 10.0,
-			"neutral_audio_file": "5. Nicole Ari - 10.ogg"
+			"neutral_audio_file": "5. Nicole Ari - 10.ogg",
+			"neutral_sidebar": "warning"
 		}, {
 			"good": "Put tire chains on your cars",
 			"bad": "Get yourself off the grid",
 			"good_audio_length": 2.0,
 			"bad_audio_length": 1.5,
 			"good_audio_file": "5A. Put tire chains - 2.ogg",
-			"bad_audio_file": "5B. Get yourself - 1.5.ogg"
+			"bad_audio_file": "5B. Get yourself - 1.5.ogg",
+			"good_sidebar": "warning",
+			"bad_sidebar": "illuminati"
 		}, {
 			"good": "Check your tires for cats",
 			"bad": "Check your phone for bugs",
 			"good_audio_length": 2.0,
 			"bad_audio_length": 1.75,
 			"good_audio_file": "6A. Check your - 2.ogg",
-			"bad_audio_file": "6B Check your phone - 1.75.ogg"
+			"bad_audio_file": "6B Check your phone - 1.75.ogg",
+			"good_sidebar": "warning",
+			"bad_sidebar": "illuminati"
 		}, {
 			"good": "Make sure to wear warm clothing",
 			"bad": "Make sure to burn off your fingerprints",
 			"good_audio_length": 2.25,
 			"bad_audio_length": 2.5,
 			"good_audio_file": "7A. Make sure to wear - 2.25.ogg",
-			"bad_audio_file": "7B Make sure to burn - 2.5.ogg"
+			"bad_audio_file": "7B Make sure to burn - 2.5.ogg",
+			"good_sidebar": "warning",
+			"bad_sidebar": "illuminati"
 		}, {
 			"good": "Reinforce your windows' insulation",
 			"bad": "Take your money out of the banks",
 			"good_audio_length": 2.0,
 			"bad_audio_length": 2.0,
 			"good_audio_file": "8A. Reinforce your - 2.ogg",
-			"bad_audio_file": "8B. Take your - 2.ogg"
+			"bad_audio_file": "8B. Take your - 2.ogg",
+			"good_sidebar": "warning",
+			"bad_sidebar": "illuminati"
 		}, {
 			"good": "And remember to always stay prepared",
 			"bad": "And remember to prepare the bunker",
 			"good_audio_length": 2.25,
 			"bad_audio_length": 2.25,
 			"good_audio_file": "9A. And remember - 2.25.ogg",
-			"bad_audio_file": "9B. And remember - 2.25.ogg"
+			"bad_audio_file": "9B. And remember - 2.25.ogg",
+			"good_sidebar": "warning",
+			"bad_sidebar": "illuminati"
 		}, {
 			"good": "Just in case you find yourself without heat and need to keep yourself and your family warm, or need to drive in hazardous conditions.",
 			"bad": "Just in case your joke of a husband leaves you on account of a wire tapping incident that he was never supposed to know about.",
 			"good_audio_length": 6.75,
 			"bad_audio_length": 7.0,
 			"good_audio_file": "10A. Just in case - 6.75.ogg",
-			"bad_audio_file": "10B. Just in case - 7.ogg"
+			"bad_audio_file": "10B. Just in case - 7.ogg",
+			"good_sidebar": "power_outage",
+			"bad_sidebar": "mark"
 		}, {
 			"neutral": "Oh? This just in, parts of Richmond are clocking in at 1 foot of snow!",
 			"neutral_audio_length": 5.75,
-			"neutral_audio_clip": "11. this just in - 5.75.ogg"
+			"neutral_audio_clip": "11. this just in - 5.75.ogg",
+			"neutral_sidebar": "accumulation"
 		},
 		{
 			"good": "If you're just checking in now, that's 4 inches more than what we reported at the beginning of the broadcast.",
@@ -94,35 +118,44 @@
 			"good_audio_length": 5.0,
 			"bad_audio_length": 6.5,
 			"good_audio_file": "11A. if you_re just - 5.ogg",
-			"bad_audio_file": "11B. multiply that - 6.5.ogg"
+			"bad_audio_file": "11B. multiply that - 6.5.ogg",
+			"good_sidebar": "accumulation",
+			"bad_sidebar": "accumulation"
 		},
 		{
 			"neutral": "In some lighter news, local children seem to be enjoying this blizzard. To join our snowman building contest tweet a picture of your snowman to #RANSnowmanContest.I'm receiving news now that I'm sure some kids will be very excited to hear. Richmond, Chesterfield, and Henrico Schools will closed tomorrow!",
 			"neutral_audio_length": 17.25,
-			"neutral_audio_clip": "12. local children - 17.25.ogg"
+			"neutral_audio_clip": "12. local children - 17.25.ogg",
+			"neutral_sidebar": "kids_having_fun"
 		}, {
 			"good": "Fun for the kids, not so much for the parents.",
 			"bad": "Why don't my kids look me in the eye anymore?",
 			"good_audio_length": 3.0,
 			"bad_audio_length": 2.5,
 			"good_audio_file": "12A. fun for kids - 3.ogg",
-			"bad_audio_file": "12B. why dont my - 2.5.ogg"
+			"bad_audio_file": "12B. why dont my - 2.5.ogg",
+			"good_sidebar": "kids_having_fun",
+			"bad_sidebar": "kids_having_fun"
 		}, {
 			"neutral": "Here's a fun story! Retired sled dog racer, Jackson martel has uploaded a video of his award winning St. Bernard, Juniper enjoying the snow to our facebook page.",
 			"neutral_audio_length": 9.5,
-			"neutral_audio_file": "13. here_s a fun - 9.5.ogg"
+			"neutral_audio_file": "13. here_s a fun - 9.5.ogg",
+			"neutral_sidebar": "dog"
 		}, {
 			"good": "Upload your fun snow day pictures to #RANSnowDay on twitter and instagram and maybe be featured on this segment.",
 			"bad": "I sent Jackson a very heartfelt direct message, but he blocked and reported me, so please downvote that video.",
 			"good_audio_length": 7.25,
 			"bad_audio_length": 6.75,
 			"good_audio_file": "13A. upload your 7.25.ogg",
-			"bad_audio_file": "13B. I sent - 6.75.ogg"
+			"bad_audio_file": "13B. I sent - 6.75.ogg",
+			"good_sidebar": "dog",
+			"bad_sidebar": "dog"
 		},
 		{
 			"neutral": "Finally, there have been reports of a humanoid wandering barefoot in the snow, eating people's garbage.",
 			"neutral_audio_length": 6.5,
-			"neutral_audio_file": "14. There have been - 6.5.ogg"
+			"neutral_audio_file": "14. There have been - 6.5.ogg",
+			"neutral_sidebar": "yeti"
 		},
 		{
 			"good": "Could these be sightings of the fabled Richmond Yeti? Who knows?",
@@ -130,11 +163,14 @@
 			"good_audio_length": 3.75,
 			"bad_audio_length": 4.0,
 			"good_audio_file": "14A. could these - 3.75.ogg",
-			"bad_audio_file": "14B. some people - 4.ogg"
+			"bad_audio_file": "14B. some people - 4.ogg",
+			"good_sidebar": "yeti",
+			"bad_sidebar": "mark"
 		}, {
 			"neutral": "This concludes tonight's segment of Rhythm Action News I'm your host Just Deborah. ",
 			"neutral_audio_length": 4.75,
-			"neutral_audio_file": "15. this concludes - 4.75.ogg"
+			"neutral_audio_file": "15. this concludes - 4.75.ogg",
+			"neutral_sidebar": "accumulation"
 		},
 		{
 			"good": "Stay warm, Richmond.",
@@ -142,7 +178,9 @@
 			"good_audio_length": 1.25,
 			"bad_audio_length": 1.5,
 			"good_audio_file": "15A stay warm - 1.25.ogg",
-			"bad_audio_file": "15B. trust no one - 1.5.ogg"
+			"bad_audio_file": "15B. trust no one - 1.5.ogg",
+			"good_sidebar": "accumulation",
+			"bad_sidebar": "illuminati"
 		}
 	]
 }
