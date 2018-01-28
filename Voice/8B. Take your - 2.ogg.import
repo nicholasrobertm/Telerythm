@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/8B. Take your - 2.ogg-abad795aa7c60089064fec114592ccb3.oggstr"
+
+[deps]
+
+source_file="res://Voice/8B. Take your - 2.ogg"
+source_md5="7ce05ac31a7b6dbce76a817a86ea7afd"
+
+dest_files=[ "res://.import/8B. Take your - 2.ogg-abad795aa7c60089064fec114592ccb3.oggstr" ]
+dest_md5="d3f387e597c6b76e904899667dcade6e"
+
+[params]
+
+loop=true
+loop_offset=0

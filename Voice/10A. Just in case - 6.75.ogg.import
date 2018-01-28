@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/10A. Just in case - 6.75.ogg-8267f2396fb4731bd024105cbacca75e.oggstr"
+
+[deps]
+
+source_file="res://Voice/10A. Just in case - 6.75.ogg"
+source_md5="d388794df45a6bfca15762c2aa187642"
+
+dest_files=[ "res://.import/10A. Just in case - 6.75.ogg-8267f2396fb4731bd024105cbacca75e.oggstr" ]
+dest_md5="d3f387e597c6b76e904899667dcade6e"
+
+[params]
+
+loop=true
+loop_offset=0

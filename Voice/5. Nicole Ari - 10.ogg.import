@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/5. Nicole Ari - 10.ogg-0ba06c4d956d9471ce897c75af21f24b.oggstr"
+
+[deps]
+
+source_file="res://Voice/5. Nicole Ari - 10.ogg"
+source_md5="9c3454b2ad168c8d5835d0853763a2ca"
+
+dest_files=[ "res://.import/5. Nicole Ari - 10.ogg-0ba06c4d956d9471ce897c75af21f24b.oggstr" ]
+dest_md5="d3f387e597c6b76e904899667dcade6e"
+
+[params]
+
+loop=true
+loop_offset=0
