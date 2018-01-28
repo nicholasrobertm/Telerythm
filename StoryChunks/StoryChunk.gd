@@ -71,7 +71,7 @@ func spawn_next(obj, k):
 	get_parent().add_child( next_chunk )
 	next_chunk.init( id+1 )
 	
-	if $"../..".get_status() == false:
+	if not ('neutral' in $"../..".messages[next_chunk.id]) and $"../..".get_status() == false:
 		next_chunk.self_modulate = Color(0,0,0,0)
 	
 	queue_free()
