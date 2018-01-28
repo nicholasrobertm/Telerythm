@@ -2,9 +2,8 @@ extends Label
 
 export var bodyText = ''
 export var time = 0
-export var button = ''
-
-export var sound_clips = ['']
+export var goodClip = ''
+export var badClip = ''
 
 onready var id = int( name.replace('Chunk', '') )
 var next_chunk
