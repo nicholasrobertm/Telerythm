@@ -362,7 +362,7 @@ tracks/9/keys = {
 "values": [ false, true ]
 }
 
-[node name="Deborah" type="AnimatedSprite"]
+[node name="Deborah" type="AnimatedSprite" index="0"]
 
 position = Vector2( 643.872, 258.369 )
 frames = SubResource( 1 )

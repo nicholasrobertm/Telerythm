@@ -6,6 +6,10 @@ func _ready():
 		teleprompter[0].connect("deborah_talking", self, "_start_talking")
 		teleprompter[0].connect("deborah_stop_talking", self, "_stop_talking")
 	
+	
+#func _process(delta):
+	#if Input.is_action_just_pressed("ui_up")
+	#	$AnimationPlayer.
 
 func _eye_updated(mood,state):
 	if state:
