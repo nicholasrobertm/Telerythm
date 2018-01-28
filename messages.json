@@ -18,7 +18,7 @@
 		}, {
 			"neutral": "That's right, it seems our predictions were wrong! Meteorologists forecasted no more than 2 inches of snow, and in some places in Richmond we're already seeing up to 8, with much more on the way in the following days.",
 			"neutral_audio_length": 10.5,
-			"neutral_audio_file": "3. That_s right - 10.5.ogg"
+			"neutral_audio_file": "That_s right - 10.5.ogg"
 		}, {
 			"good": "Stay tuned for tips on what to do if you need to go out in a blizzard.",
 			"bad": "It makes you think. What else has science been wrong about?",
@@ -51,9 +51,9 @@
 		}, {
 			"good": "Check your tires for cats",
 			"bad": "Check your phone for bugs",
-			"good_audio_length": 1.75,
+			"good_audio_length": 2.0,
 			"bad_audio_length": 1.75,
-			"good_audio_file": "6A. Check your phone - 1.75.ogg",
+			"good_audio_file": "6A. Check your - 2.ogg",
 			"bad_audio_file": "6B Check your phone - 1.75.ogg"
 		}, {
 			"good": "Make sure to wear warm clothing",
@@ -106,11 +106,11 @@
 			"good_audio_length": 3.0,
 			"bad_audio_length": 2.5,
 			"good_audio_file": "12A. fun for kids - 3.ogg",
-			"bad_audio_file": "12B. why don_t my - 2.5.ogg"
+			"bad_audio_file": "12B. why dont my - 2.5.ogg"
 		}, {
 			"neutral": "Here's a fun story! Retired sled dog racer, Jackson martel has uploaded a video of his award winning St. Bernard, Juniper enjoying the snow to our facebook page.",
-			"neutral_audio_length": 9.75,
-			"neutral_audio_file": "13. here_s a fun - 9.75.ogg"
+			"neutral_audio_length": 9.5,
+			"neutral_audio_file": "13. here_s a fun - 9.5.ogg"
 		}, {
 			"good": "Upload your fun snow day pictures to #RANSnowDay on twitter and instagram and maybe be featured on this segment.",
 			"bad": "I sent Jackson a very heartfelt direct message, but he blocked and reported me, so please downvote that video.",
