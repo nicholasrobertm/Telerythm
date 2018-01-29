@@ -10,7 +10,7 @@ resource_local_to_scene = true
 flags = 0
 viewport_path = NodePath("Viewport")
 
-[node name="Teleprompter" type="Node2D" groups=[
+[node name="Teleprompter" type="Node2D" index="0" groups=[
 "Teleprompter",
 ]]
 
