@@ -7,7 +7,7 @@
 [ext_resource path="res://Meter/Meter 0.png" type="Texture" id=5]
 [ext_resource path="res://Sidebar.tscn" type="PackedScene" id=6]
 
-[node name="Newsroom" type="Node" index="0"]
+[node name="Newsroom" type="Node"]
 
 [node name="Backdrop" parent="." index="0" instance=ExtResource( 1 )]
 

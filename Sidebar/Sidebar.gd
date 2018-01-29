@@ -9,7 +9,7 @@ func _image_change(id, status):
 	var message = get_tree().get_nodes_in_group("Teleprompter")[0].messages[id]
 	if 'neutral' in message:
 		self.animation = message['neutral_sidebar']
-	elif 'good' in message:
+	elif status == true:
 		self.animation = message['good_sidebar']
-	elif 'bad' in message:
+	elif status == false:
 		self.animation = message['bad_sidebar']
