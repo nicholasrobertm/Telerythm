@@ -11,6 +11,7 @@ signal new_chunk(id)
 
 func init(i):
 	id = i
+	print(id)
 	
 	if id >= $"../..".messages.size():
 		get_tree().change_scene_to( preload("res://Title.tscn") )

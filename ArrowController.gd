@@ -34,7 +34,9 @@ func new_combo( id, __ ):
 	status = false
 	clear_arrows()
 	
-	for i in range( 0, int( get_parent().get_time() ) ):
+	var pattern_size = ( get_parent().get_time() ) 
+	pattern_size = int( clamp(pattern_size, 2, 12 ) )
+	for i in range( 0, pattern_size ):
 		var next_arrow = int( rand_range(0,4) ) 
 		match next_arrow:
 			0:
@@ -85,3 +87,6 @@ func clear_arrows():
 		if child is AnimationPlayer:
 			continue
 		child.queue_free()
+	rect_scale = Vector2(1,1)
+	modulate = Color(1,1,1)
+	rect_position = Vector2(0,480)

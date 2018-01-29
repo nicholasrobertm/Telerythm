@@ -109,7 +109,7 @@
 		}, {
 			"neutral": "Oh? This just in, parts of Richmond are clocking in at 1 foot of snow!",
 			"neutral_audio_length": 5.75,
-			"neutral_audio_clip": "11. this just in - 5.75.ogg",
+			"neutral_audio_file": "11. this just in - 5.75.ogg",
 			"neutral_sidebar": "accumulation"
 		},
 		{
@@ -125,7 +125,7 @@
 		{
 			"neutral": "In some lighter news, local children seem to be enjoying this blizzard. To join our snowman building contest tweet a picture of your snowman to #RANSnowmanContest.I'm receiving news now that I'm sure some kids will be very excited to hear. Richmond, Chesterfield, and Henrico Schools will closed tomorrow!",
 			"neutral_audio_length": 17.25,
-			"neutral_audio_clip": "12. local children - 17.25.ogg",
+			"neutral_audio_file": "12. local children - 17.25.ogg",
 			"neutral_sidebar": "kids_having_fun"
 		}, {
 			"good": "Fun for the kids, not so much for the parents.",
