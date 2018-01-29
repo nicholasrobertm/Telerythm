@@ -4,7 +4,7 @@
 [ext_resource path="res://Title.gd" type="Script" id=2]
 [ext_resource path="res://News music.wav" type="AudioStream" id=3]
 
-[node name="Title" type="Sprite" index="0"]
+[node name="Title" type="Sprite"]
 
 texture = ExtResource( 1 )
 centered = false
