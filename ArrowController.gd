@@ -71,6 +71,10 @@ func success():
 
 func failure():
 	status = false
+	for child in get_children():
+		if child is AnimationPlayer:
+			continue
+		child.modulate = Color(1,1,1)
 	emit_signal("success", false)
 	
 func get_arrows():

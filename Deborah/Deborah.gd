@@ -23,7 +23,6 @@ func _transition(id, status):
 	
 
 func _eye_updated(mood,state):
-	print(mood)
 	if state:
 		if mood:
 			$Eyes.play("calm_blink")

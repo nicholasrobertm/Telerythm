@@ -95,7 +95,7 @@ tracks/1/keys = {
 "values": [ Color( 0, 0, 1, 1 ), Color( 0, 0, 1, 0 ) ]
 }
 
-[node name="Up" type="TextureRect"]
+[node name="Up" type="TextureRect" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -123,6 +123,5 @@ anims/Intro = SubResource( 1 )
 anims/Intro-Key = SubResource( 2 )
 anims/Success = SubResource( 3 )
 blend_times = [  ]
-autoplay = ""
 
 

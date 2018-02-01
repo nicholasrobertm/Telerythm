@@ -7,7 +7,7 @@
 resource_name = "Failure"
 length = 0.4
 loop = false
-step = 0.1
+step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:rect_scale")
 tracks/0/interp = 1
@@ -16,7 +16,7 @@ tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 0.4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"transitions": PoolRealArray( 4, 1 ),
 "update": 0,
 "values": [ Vector2( 1, 1 ), Vector2( 1.5, 1.5 ) ]
 }
@@ -39,22 +39,24 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.075, 0.15, 0.225, 0.3, 0.375, 0.45, 0.525 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0, 480 ), Vector2( -20, 480 ), Vector2( 20, 480 ), Vector2( -20, 480 ), Vector2( 20, 480 ), Vector2( -20, 480 ), Vector2( 20, 480 ), Vector2( -20, 480 ) ]
+"values": [ Vector2( 0, 480 ), Vector2( -20, 480 ), Vector2( 20, 480 ), Vector2( -20, 480 ), Vector2( 20, 480 ), Vector2( -20, 480 ), Vector2( 20, 480 ), Vector2( 0, 480 ), Vector2( 0, 0 ) ]
 }
 
-[node name="ArrowController" type="GridContainer" index="0"]
+[node name="ArrowController" type="GridContainer"]
 
-modulate = Color( 1, 0, 0, 1 )
+modulate = Color( 1, 0, 0, 0 )
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
+margin_left = -20.0
 margin_top = 480.0
-margin_right = 320.0
+margin_right = 300.0
 margin_bottom = 720.0
+rect_scale = Vector2( 1.5, 1.5 )
 rect_pivot_offset = Vector2( 160, 120 )
 mouse_filter = 0
 mouse_default_cursor_shape = 0

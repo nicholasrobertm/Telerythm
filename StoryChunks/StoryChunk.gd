@@ -11,7 +11,6 @@ signal new_chunk(id)
 
 func init(i):
 	id = i
-	print(id)
 	
 	if id >= $"../..".messages.size():
 		get_tree().change_scene_to( preload("res://Title.tscn") )
@@ -45,7 +44,6 @@ func _ready():
 	var teleprompter = get_tree().get_nodes_in_group("Teleprompter")
 	if teleprompter.size() != 0:
 		teleprompter = teleprompter[0]
-		teleprompter.connect("success", self, 'success')
 		connect('new_chunk', teleprompter, 'new_chunk_in')
 	
 	emit_signal('new_chunk', id)
