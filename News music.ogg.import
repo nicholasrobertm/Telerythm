@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/News music.ogg-a2d9818c3bf4e97f7581387b1029d059.oggstr"
+
+[deps]
+
+source_file="res://News music.ogg"
+source_md5="30efbd7a66b08bed27141c206bfdfc57"
+
+dest_files=[ "res://.import/News music.ogg-a2d9818c3bf4e97f7581387b1029d059.oggstr" ]
+dest_md5="dc2c0871c8f76e4d9159e5e3130fff21"
+
+[params]
+
+loop=true
+loop_offset=0
