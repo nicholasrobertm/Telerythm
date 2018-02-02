@@ -95,13 +95,14 @@ tracks/1/keys = {
 "values": [ Color( 0, 0, 1, 1 ), Color( 0, 0, 1, 0 ) ]
 }
 
-[node name="Up" type="TextureRect" index="0"]
+[node name="Up" type="TextureRect"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 80.0
+margin_left = 2.0
+margin_right = 82.0
 margin_bottom = 80.0
 rect_pivot_offset = Vector2( 40, 40 )
 mouse_filter = 1

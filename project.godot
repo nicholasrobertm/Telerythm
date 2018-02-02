@@ -12,6 +12,7 @@ config_version=3
 
 config/name="Rhythm Action News"
 run/main_scene="res://Title.tscn"
+boot_splash/image="res://Title screen.png"
 config/icon="res://icon.png"
 
 [display]
